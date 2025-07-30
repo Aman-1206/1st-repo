@@ -2,30 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<section>
-        <div>
-            <fieldset>
-                <legend>Contact Me</legend>
-            <form action="mailto:amankumarschool7@gmail.com" method="post" enctype="text/plain">
-                <input type="text" placeholder="Enter your name" required>
-                <br>
-                <br>
-                <input type="tel" placeholder="Enter your Phone no." required>
-                <br>
-                <br>
-                <input type="email" placeholder="Enter your email" required>
-                <br>
-                <br>
-                <textarea name="Message" id="101" placeholder="write a message" rows="2"></textarea>
-                <br><br>
-                <button type="submit">send message</button>
-            </form>
-            </fieldset>
-        </div>
-       </section>
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
 </head>
 <body>
-    
+    <section>
+        <div>
+            <form action="mailto:amankumarschool7@gmail.com" method="post" enctype="text/plain">
+                
+                <fieldset style="border: 2px solid black; padding: 20px;">
+                    <legend>Contact Me</legend>
+                    
+                    <input type="text" placeholder="Enter your name" required>
+                    <br><br>
+                    
+                    <input type="tel" placeholder="Enter your Phone no." required>
+                    <br><br>
+                    
+                    <input type="email" placeholder="Enter your email" required>
+                    <br><br>
+                    
+                    <label for="reason">Reason For Contacting Me:</label>
+                    <br>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Select a reason</option>
+                        <option value="Front-end developer">Front-end Developer</option>
+                        <option value="Back-end developer">Back-end Developer</option>
+                        <option value="Python developer">Python Developer</option>
+                        <option value="App developer">App Developer</option>
+                        <option value="Game developer">Game Developer</option>
+                    </select>
+                    <br><br>
+                    
+                    <textarea name="Message" placeholder="Write a message" rows="2"></textarea>
+                    <br><br>
+                    
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
